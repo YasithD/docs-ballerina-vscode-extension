@@ -1,6 +1,6 @@
 # Data Mapper
 
-The Data Mapper of Ballerina is a powerful tool designed to facilitate seamless data transformation through an user-friendly interface. When you engage with the Data Mapper via its interface, it automatically generates the necessary Ballerina source code to execute the data mapping. This feature ensures that the Ballerina source code serves as the single source of truth for the Visual Data Mapper, allowing you to open, edit, and manage existing data mappings crafted through the source code without compromising the user experience.
+The Data Mapper of Ballerina is a tool designed to facilitate seamless data transformation through an user interface. When you engage with the Data Mapper via its interface, it automatically generates the necessary Ballerina source code to execute the data mapping. This feature ensures that the Ballerina source code serves as the single source of truth for the Visual Data Mapper, allowing you to open, edit, and manage existing data mappings crafted through the source code without compromising the user experience.
 
 In the subsequent sections, we will walk through a practical scenario where the Data Mapper is employed to transform input records into a specific output record format. This hands-on approach aims to provide a clear understanding of the Data Mapper’s functionality and its application in real-world data transformation tasks.
 
@@ -50,7 +50,7 @@ Your goal is to transform these inputs into the following output format:
 }
 ```
 
-## Creating the transformation function with Data Mapper
+## Creating the transformation function
 
 The Data Mapper allows you to visually map the input data structures to the expected output structure, generating the Ballerina code necessary for the transformation.
 
@@ -122,7 +122,7 @@ type Student record {
     string visaType;
 };
 
-const D_TIER_4_VISA = "D tier-4";
+const D_TIER_4_VISA = "D-tier-4";
 
 var totalCredits = function(int total, record {string id; string name; int credits;} course) returns int => total + (course.id.startsWith("CS") ? course.credits : 0);
 
@@ -146,7 +146,7 @@ function transform(Person person, Course[] courses) returns Student => let var i
 It’s crucial to validate the data mapping functionality through testing. Below is a step-by-step guide on crafting and executing a Ballerina test to ensure the transformation function works as expected.
 
 ### Crafting the test:
-Create a Ballerina test file and write a test function. This function should invoke the `transform` function with sample `Person` and `Course` records, then assert whether the output matches the expected `Student` record.
+Create a Ballerina test file and write a test function (For more information on Ballerina Tests, check the following [documentation](https://ballerina.io/learn/test-ballerina-code/test-a-simple-function)). This function should invoke the `transform` function with sample `Person` and `Course` records, then assert whether the output matches the expected `Student` record.
 
 Here’s a sample test function:
 
@@ -179,7 +179,7 @@ function testTransformFunction() {
             {title: "CS6002 - Computation Structures", credits: 4}
         ],
         totalCredits: 4,
-        visaType: "D tier-4"
+        visaType: "D-tier-4"
     };
 
     Student resultStudent = transform(testPerson, testCourses);
@@ -199,7 +199,10 @@ Compiling source
     <Your_Package_Name>
 
 Running Tests
+
     <Your_Package_Name>
+
+
         1 passing
         0 failing
         0 skipped

@@ -18,6 +18,10 @@ Once the array is initialized, click the **+ Add Element** button to add the arr
 
 1. Add a hard-coded visa type for foreign students.
 
+    ```ballerina
+    const D_TIER_4_VISA = "D-tier-4";
+    ```
+
     <img src="https://wso2.com/ballerina/vscode/docs/img/visual-programming/datamapper/add-inline-expr.gif" class="cInlineImage-full"/>
 
     !!! Info
