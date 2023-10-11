@@ -92,7 +92,15 @@ nav:
   - Implement the code:
       - implement-the-code/index.md
       - Sequence Diagram View: implement-the-code/sequence-diagram-view.md
-      - Data Mapper: implement-the-code/data-mapper.md
+      - Data Mapper / Guide: implement-the-code/data-mapper-guide.md
+      - Data Mapper / References:
+          - implement-the-code/data-mapper-references/index.md
+          - Basic mapping: implement-the-code/data-mapper-references/basic-mapping.md
+          - Diagnose and fix mapping errors: implement-the-code/data-mapper-references/diagnose-and-fix-mapping-errors.md
+          - Aggregate input and output fields: implement-the-code/data-mapper-references/aggregate-input-and-output-fields.md
+          - Map the arrays: implement-the-code/data-mapper-references/map-the-arrays.md
+          - Add local variables: implement-the-code/data-mapper-references/add-local-variables.md
+          - Manipulate fields without drawing connections: implement-the-code/data-mapper-references/manipulate-fields-without-drawing-connections.md
   - Write the code:
       - write-the-code/index.md
       - IntelliSense: write-the-code/intellisense.md
