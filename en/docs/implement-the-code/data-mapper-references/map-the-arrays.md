@@ -1,7 +1,4 @@
-To convert from one array type to another, map the input array to the output array. If the arrays are compatible, they will be connected with a blue line. If they are incompatible, the connecting line will appear in red.
-
-!!! Info
-    You can use the Ballerina query support to convert one array type to another. To use a query in a Data Mapper, select the array by clicking on it. Then, it will provide you with several buttons. Click the code action button (bulb sign) and select **Convert to query**. Then, the Data Mapper will convert the mapping to a query. Next, move into the query and do the mapping between the array types.
+To convert from one array type to another, map the input array to the output array. The arrays will be connected with a blue line if they are compatible, and with a red line if they are incompatible. You can utilize the Ballerina query support for this conversion. In the Data Mapper, select the array and click the code action button (bulb sign), then select **Convert to query**. This will convert the mapping to a query, allowing you to map between the array types within the query.
 
 <img src="../../assets/data-mapper/map-the-arrays-1.gif" class="cInlineImage-full"/>
 

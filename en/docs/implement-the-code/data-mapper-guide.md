@@ -2,13 +2,13 @@
 
 The Data Mapper of Ballerina is a tool designed to facilitate seamless data transformation through an user interface. When you engage with the Data Mapper via its interface, it automatically generates the necessary Ballerina source code to execute the data mapping. This feature ensures that the Ballerina source code serves as the single source of truth for the Visual Data Mapper, allowing you to open, edit, and manage existing data mappings crafted through the source code without compromising the user experience.
 
-In the sections that follow, we will guide you through a practical scenario in which the Data Mapper is utilized to transform input records into a designated output record format. The process begins with launching the Data Mapper and initializing the input and output formats. Subsequently, we will conduct a test for the transformation function using a Ballerina. After implementing the transformation function, we will re-run the test to verify whether the transformation has been executed as anticipated. Through this hands-on approach, our objective is to offer a lucid understanding of the Data Mapper’s capabilities and its practical application in executing real-world data transformation tasks.
+In the sections that follow, we will guide you through a practical scenario in which the Data Mapper is utilized to transform input records into a designated output record format. The process begins with launching the Data Mapper and initializing the input and output formats. Subsequently, we will conduct a test for the transformation function using a Ballerina. After implementing the transformation function, we will re-run the test to verify whether the transformation has been executed as anticipated.
 
 ## Sample use case
 
 Imagine a scenario where you have records of **students** and the **courses** they are enrolled in, both in distinct formats. Your task is to transform these input records into a consolidated format that provides a comprehensive view of each student's details and their enrolled courses.
 
-Below are the sample input records:
+Below are the sample input json files:
 
 **Input 1: Person**
 
@@ -69,7 +69,8 @@ After opening the Data Mapper, define the input and output records for the trans
 In the Data Mapper form, you have several options to provide the input and output records. If the records are already defined in your package, you can select one of those. If you are starting from scratch, you can either create the record from the [Record Editor view](https://wso2.com/ballerina/vscode/docs/references/record-editor/) or import a JSON to create a matching record.
 
 This example imports JSON files and creates the records as shown below.
-![Define Inputs and Output](assets/data-mapper/inputs-and-output.gif)
+
+<img src="../assets/data-mapper/inputs-and-output.gif" class="cInlineImage-full"/>
 
 ## Testing the code
 
@@ -138,11 +139,11 @@ Now, let's re-run the initial test. The output should now resemble the following
 
 ```bash
 Compiling source
-    <Your_Package_Name>
+    <user>/<package_name>:<version>
 
 Running Tests
 
-    <Your_Package_Name>
+    <package_name>
 
 
         1 passing
